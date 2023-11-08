@@ -1,0 +1,36 @@
+.sv-progressbar-percentage {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px;
+    line-height: 32px;
+}
+
+.sv-progressbar-percentage__title {
+    font-size: 20px;
+    display: flex;
+}
+
+.sv-progressbar-percentage__indicator {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 50%;
+    height: 32px;
+    border: 1px solid #19b394;
+}
+
+.sv-progressbar-percentage__value-bar {
+    position: absolute;
+    background-color: #19b394;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.sv-progressbar-percentage__value {
+    font-size: 20px;
+    display: flex;
+    color: #19b394;
+}
+
