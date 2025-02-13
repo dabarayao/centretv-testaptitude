@@ -58,10 +58,8 @@ function SurveyComponent() {
   const surveyEnd = new Model(jsonEnd);
   const [quizStart, setQuizStart] = useState(false);
   const [canTakeTest, setCanTakeTest] = useState(true);
-
-  // Check localStorage on component mount
-
-  // Check localStorage on component mount
+  const [dataForm, setDataForm] = useState({});
+  const [total, setTotal] = useState(0);
 
   // Check localStorage on component mount
   useEffect(() => {
@@ -73,6 +71,7 @@ function SurveyComponent() {
 
       if (hoursDifference < 24) {
         setCanTakeTest(false);
+        localStorage.removeItem("lastSubmissionTime");
       } else {
         // Clear the timestamp if more than 24 hours have passed
         localStorage.removeItem("lastSubmissionTime");
@@ -92,13 +91,66 @@ function SurveyComponent() {
 
   survey.locale = "fr";
   survey.onComplete.add((sender, options) => {
-    console.log(JSON.stringify(sender.data, null, 3));
+    const data = sender.data;
 
-    // Send data to your server here
+    setDataForm((prevState) => ({ prevState, ...data }));
+    setQuizStart(true);
+  });
+
+  surveyQuiz.locale = "fr";
+  surveyQuiz.onComplete.add((sender) => {
+    let formData = new FormData();
+
+    setCanTakeTest(false);
+
+    const currentTime = new Date().getTime();
+    localStorage.setItem("lastSubmissionTime", currentTime.toString());
+
+    surveyQuiz.getAllQuestions().forEach(function (question) {
+   
+      formData.append(question.name, question.value);
+    });
+
+    formData.append(
+      "total",
+      surveyQuiz
+        .getAllQuestions()
+        .filter(
+          (question) =>
+            question.value === question.correctAnswer &&
+            question.name.includes(5)
+        ).length *
+        5 +
+        surveyQuiz
+          .getAllQuestions()
+          .filter(
+            (question) =>
+              question.value === question.correctAnswer &&
+              question.name.includes(4)
+          ).length *
+          4
+    );
+
+    formData.append(
+      "totalCorrect",
+      surveyQuiz
+        .getAllQuestions()
+        .filter((question) => question.value === question.correctAnswer).length
+    );
+
+    for (let key in dataForm) {
+      formData.append(key, dataForm[key]);
+    }
+
     axios
       .post(
         "https://testaptitude.aacomacademie.com/back_end/mailing.php",
-        sender.data
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
       ) // Replace with your server URL
       .then((response) => {
         console.log("Data successfully submitted", response);
@@ -106,24 +158,10 @@ function SurveyComponent() {
       .catch((error) => {
         console.error("Error submitting data:", error);
       });
-
-    setQuizStart(true);
-  });
-
-  surveyQuiz.locale = "fr";
-  surveyQuiz.onComplete.add((sender, options) => {
-    console.log(JSON.stringify(sender.data, null, 3));
-
-    setCanTakeTest(false);
-
-    const currentTime = new Date().getTime();
-    localStorage.setItem("lastSubmissionTime", currentTime.toString());
   });
 
   surveyEnd.locale = "fr";
-  surveyEnd.onComplete.add((sender, options) => {
-    console.log(JSON.stringify(sender.data, null, 3));
-  });
+  surveyEnd.onComplete.add((sender, options) => {});
 
   survey.addLayoutElement({
     id: "progressbar-percentage",

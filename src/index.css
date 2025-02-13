@@ -45,3 +45,7 @@
 .sd-logo__image {
   margin-top: -80px;
 }
+
+.sd-question__content {
+  margin-top: -15px !important;
+}

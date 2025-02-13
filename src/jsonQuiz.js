@@ -13,12 +13,7 @@ export const jsonQuiz = {
     "pages": [
         {
             "name": "page1",
-            "title": {
-                "fr": "\n"
-            },
-            "description": {
-                "fr": "\n"
-            },
+            "visible": false,
             "elements": [
                 {
                     "type": "panel",
@@ -32,11 +27,11 @@ export const jsonQuiz = {
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "quiz1",
+                            "name": "quiz1_5",
                             "title": {
                                 "fr": "1. Quelle est la principale mesure économique prise par le gouvernement ivoirien pour soutenir la croissance du pays en 2023 ?"
                             },
-                            "correctAnswer": "Item 1",
+                            "correctAnswer": "c",
                             "isRequired": true,
                             "choices": [
                                 {
@@ -79,16 +74,16 @@ export const jsonQuiz = {
                         "fr": "TEST PRATIQUE"
                     },
                     "description": {
-                        "fr": "A.\tCulture générale et actualités"
+                        "fr": "A. Culture générale et actualités"
                     },
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "quiz2",
+                            "name": "quiz2_5",
                             "title": {
                                 "fr": "2. Quel événement économique majeur a eu lieu en Côte d'Ivoire en 2024 ?"
                             },
-                            "correctAnswer": "Item 1",
+                            "correctAnswer": "a",
                             "isRequired": true,
                             "choices": [
                                 {
@@ -116,6 +111,1086 @@ export const jsonQuiz = {
                                     }
                                 }
                             ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page3",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel3",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz3_4",
+                            "title": {
+                                "fr": "1. Quelle est la bonne orthographe du mot suivant dans cette phrase : \r\n« Il a fait preuve d'une _____ exceptionnelle dans la gestion de ce projet. » \n"
+                            },
+                            "correctAnswer": "a",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) perspicacité"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) perspiscacité"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) perpicacité"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) perpiscacité"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page4",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel4",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz4_4",
+                            "title": {
+                                "fr": "2. Choisissez la forme correcte de la phrase : \n"
+                            },
+                            "correctAnswer": "d",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Les enfants se sont amusé à la fête pendant toute la soirée. "
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Les enfants se sont amusés à la fête pendant toute la soirée."
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Les enfants se sont amusés dans la fête toute la soirée."
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Les enfants se sont amusés à la fête toute la soirée."
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page5",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel5",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz5_4",
+                            "title": {
+                                "fr": "3. Quelle est la conjugaison correcte du verbe dans cette phrase ? \r\n« Si tu _____ plus tôt, tu aurais pu assister à la réunion. »"
+                            },
+                            "correctAnswer": "b",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "partais"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "étais parti"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "partis"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "serais parti"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page6",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel6",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz6_4",
+                            "title": {
+                                "fr": "4. Identifiez l'erreur dans cette phrase :  « Elle n'a pas assez des informations pour répondre à la question. » \n"
+                            },
+                            "correctAnswer": "a",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) « pas assez des informations »"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) « répondre à la question »"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) « Elle n'a pas »"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) « pas assez »"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page7",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel7",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz7_4",
+                            "title": {
+                                "fr": "5. Complétez la phrase avec le bon participe passé :\r\n La lettre _____ par la secrétaire est très importante. » "
+                            },
+                            "correctAnswer": "a",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) reçue"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) reçu"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) reçut"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) réçu"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page8",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel8",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "html",
+                            "name": "question1",
+                            "html": {
+                                "fr": "<strong>6. Déterminez la fonction grammaticale de l'expression en gras dans cette phrase : </strong><br>\n« <strong>Tous les élèves</strong> ont réussi leur examen. » "
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz8_4",
+                            "title": {
+                                "fr": "\n"
+                            },
+                            "description": {
+                                "fr": "\n\n"
+                            },
+                            "correctAnswer": "b",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Complément d'objet direct"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Sujet"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Complément circonstanciel"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Complément d'objet indirect"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page9",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel9",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz9_4",
+                            "title": {
+                                "fr": "7. Quelle est la bonne orthographe du mot dans cette phrase ?  « Elle a un talent exceptionnel dans la musique. » "
+                            },
+                            "correctAnswer": "b",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) exceptionnelle"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) exceptionnel"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) excéptionnel"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) expectionel"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page10",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel10",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz10_4",
+                            "title": {
+                                "fr": "8.  Analysez ce passage et répondez à la question suivante : \n\"Le vent soufflait avec une telle violence que les arbres semblaient se plier sous sa force.\" Quel effet de style est utilisé ici ?"
+                            },
+                            "correctAnswer": "a",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) La personnification"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) La métaphore"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) L'hyperbole"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) L'anaphore"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page11",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel11",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz11_4",
+                            "title": {
+                                "fr": "9.  Dans quel cas la règle de l'accord du participant passé ne s'applique-t-elle pas ? "
+                            },
+                            "correctAnswer": "b",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Lorsque le COD précède le verbe"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Lorsque le verbe est suivi d'un complément d'objet indirect"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Lorsque le sujet du verbe est féminin"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Lorsque le verbe est réfléchi"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page12",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel12",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "B. Langue française (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz12_4",
+                            "title": {
+                                "fr": "10.  Analysez ce passage : \n« La ville, aux ruelles étroites et pavées, semblait avoir traversé les âges sans changer, comme figée dans le temps. »  Quel effet l'auteur cherche-t-il à produire par cette description ? "
+                            },
+                            "correctAnswer": "b",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Montrer la modernité de la ville"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Métaphoriser la ville comme un lieu historique"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Exprimer l'ennui de la ville"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Présenter la ville comme un lieu dynamique"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page13",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel13",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz13_4",
+                            "title": {
+                                "fr": "1.  Quel est le rôle du mot \"cependant\" dans la phrase suivante : \r\n\"Il pleuvait toute la journée, cependant, ils sont partis en randonnée.\" a) Il introduit une cause. "
+                            },
+                            "correctAnswer": "b",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Il introduit une cause"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Il marque une opposition"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Il exprime une conséquence"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Il indique un choix."
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page14",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel14",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz14_4",
+                            "title": {
+                                "fr": "2. Dans la phrase suivante, quelle est la fonction du mot \"encore\" ? \r\n\"Il est encore trop tôt pour partir.\""
+                            },
+                            "correctAnswer": "a",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Adverbe de temps"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Adverbe de quantité"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Pronom démonstratif"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Conjonction de coordination"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page15",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel15",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz15_4",
+                            "title": {
+                                "fr": "3. Quel est le lien logique entre les deux parties de la phrase suivante : \r\n\"Il a beaucoup étudié, donc il a réussi l'examen.\""
+                            },
+                            "correctAnswer": "c",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Opposition"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Cause"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Conséquence"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Addition"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page16",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel16",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz16_4",
+                            "title": {
+                                "fr": "4. Quelle est la fonction du groupe de mots \"en tant que journaliste\" dans la phrase : \r\n\"En tant que journaliste, il doit toujours vérifier ses sources.\""
+                            },
+                            "correctAnswer": "c",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Sujet"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Complément d'objet direct"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Complément circonstanciel"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Attribut du sujet"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page17",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel17",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz17_4",
+                            "title": {
+                                "fr": "5. Dans la phrase suivante, quelle est la relation logique entre les deux propositions ? \r\n\"Il pleuvait, donc la réunion a été annulée.\" "
+                            },
+                            "correctAnswer": "b",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Cause"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Complément d'objet direct"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Condition"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Concession"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page18",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel18",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz18_4",
+                            "title": {
+                                "fr": "6.  Dans la phrase suivante, quel est le lien logique entre les deux propositions ? \r\n\"Il a étudié toute la nuit, cependant il n'a pas réussi l'examen.\""
+                            },
+                            "correctAnswer": "c",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Cause"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Conséquence"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Opposition"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Condition"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page19",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel19",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz19_4",
+                            "title": {
+                                "fr": "7.  Dans la phrase suivante, quel est le lien logique entre les deux propositions ? \n\"Si tu veux, je peux t'aider à faire tes devoirs.\" "
+                            },
+                            "correctAnswer": "d",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Cause"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Conséquence"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Opposition"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Condition"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page20",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel20",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz20_4",
+                            "title": {
+                                "fr": "8.  Dans la phrase suivante, quel est le lien logique entre les deux propositions ? \n\"Elle a pris son temps, car elle savait qu'elle n'était pas pressée.\" "
+                            },
+                            "correctAnswer": "a",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Cause"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Conséquence"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Opposition"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Condition"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page21",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel21",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz21_4",
+                            "title": {
+                                "fr": "9. Dans la phrase suivante, quel est le lien logique entre les deux propositions ? \n\"Il est très intelligent, il n'a pas cependant réussi son projet.\" "
+                            },
+                            "correctAnswer": "c",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Cause"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Conséquence"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Opposition"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Condition"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page22",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel22",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "quiz22_4",
+                            "title": {
+                                "fr": "10. Dans la phrase suivante, quel est le lien logique entre les deux propositions ? \n\"Il est arrivé en retard parce qu'il a raté son bus.\""
+                            },
+                            "correctAnswer": "a",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "a",
+                                    "text": {
+                                        "fr": "a) Cause"
+                                    }
+                                },
+                                {
+                                    "value": "b",
+                                    "text": {
+                                        "fr": "b) Conséquence"
+                                    }
+                                },
+                                {
+                                    "value": "c",
+                                    "text": {
+                                        "fr": "c) Opposition"
+                                    }
+                                },
+                                {
+                                    "value": "d",
+                                    "text": {
+                                        "fr": "d) Condition"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page24",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel24",
+                    "title": {
+                        "fr": "TEST PRATIQUE"
+                    },
+                    "description": {
+                        "fr": "C. Logique et analyse (10 questions, 40%)"
+                    },
+                    "elements": [
+                        {
+                            "type": "comment",
+                            "name": "quiz23_5",
+                            "title": {
+                                "fr": "Pourquoi souhaitez-vous intégrer l'École du Journalisme Moderne de l'AACOM et comment pensez-vous que la formation en journalisme vous aidera dans votre parcours professionnel ? "
+                            },
+                            "description": {
+                                "fr": "(Réponse courte, 150 mots maximum)"
+                            },
+                            "correctAnswer": "a",
+                            "isRequired": true,
+                            "maxLength": 150
                         }
                     ]
                 }
